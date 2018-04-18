@@ -1,17 +1,114 @@
 body {
-	padding: 50px;
+	padding: 10px;
 	font: 14px "Work Sans", Helvetica, Arial, sans-serif;
 	font-weight: 400;
+	width: 960px;
+	margin: auto;
 }
 
 h1 {
-	color: #EA7D7D
+	color: #EA7D7D;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.7em;
+	font-weight: 400;
 }
 
 h2 {
-	color: #111111
+	color: #111111;
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 a {
-	color: #EA7D7D
+	color: #EA7D7D;
 }
+
+p {
+	text-align: center;
+}
+
+
+// Top Nav
+
+
+.header {
+	display: inline-flex;
+
+}
+
+
+.logo {
+	display: inline-flex;
+
+}
+
+.main-nav {
+	display: inline-flex;
+	justify-content:flex-end;
+	align-self: end;
+}
+
+.header ul {
+  margin-left: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.logo a{
+	font-size: 35px;
+	font-family: DIN Condensed; src: url('public/fonts/DINWeb-CondBold.ttf');
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #111111;
+	text-decoration: none;
+}
+
+
+.main-nav a{
+	color: #111111;
+	text-decoration: none;
+	padding-left: 15px;
+}
+
+.main-nav a:hover {
+    color: #EA7D7D;
+}
+
+.logo a:hover {
+    color: #EA7D7D;
+}
+
+// Photo Grids
+
+.portfolio-container {
+  max-width: 960px;
+}
+.portfolio-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 960px;
+  margin: 20 auto;
+}
+
+.portfolio-images img {
+  display: block;
+  float: right;
+  flex: 0 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio-images img {
+    width: calc(100%/3 - 6px);
+  }
+}
+
+
+
+
